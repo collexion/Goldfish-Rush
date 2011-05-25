@@ -1,0 +1,165 @@
+#fish{
+background:url('goldieSpritesheetrevised.png') no-repeat;
+background-position-x: 0px;
+background-position-y: 0px;
+width:192px;
+height:201px;	
+position:absolute;
+z-index:10;
+left:71%;
+bottom:12px;
+	
+	
+}
+#pipe{
+	height:640px;
+	width:640px;	
+	z-index:1;
+	position:absolute;
+	background:url('pipe 50684a.png');
+	
+}
+.board{
+	
+	height:640px;
+	width:640px;
+	background:#50684a;
+	position: relative;
+	overflow:hidden;
+}
+
+#water{
+	
+	width:640px;
+	height:620px;
+	position:absolute;
+	opacity:.3;
+	z-index:20;
+	top:20px;  
+	background:blue;
+	
+	
+	
+}
+ .big{
+	
+	
+	
+	-moz-transition:all 1 ease-in;  /* FF3.7+ */
+	-o-transition:all 1 ease-in;  /* Opera 10.5 */
+	-webkit-transition:all 1 ease-in;  /* Saf3.2+, Chrome */
+	transition:all 1 ease-in;
+-moz-transform:scale(2,2);
+-o-transform:scale(2,2);
+-webkit-transform:scale(2,2);
+transform:scale(2,2);	
+	
+	
+}
+.pipeRing{
+	
+	
+	position:absolute;
+	top:0;
+	left:0;
+	
+	-webkit-transform: scale3d(2, 2, 2);
+	-webkit-animation-name: grow;
+	-webkit-animation-duration: 2s; 
+	
+}
+.pipeRing2{
+	
+	
+	position:absolute;
+	top:0;
+	left:0;
+	
+	-webkit-transform: scale3d(2, 2, 2);
+	-webkit-animation-name: grow2;
+	-webkit-animation-duration: 3s; 
+	
+} 
+.pipeRing3{
+	
+   	position:absolute;
+	top:0;
+	left:0;
+	
+	-webkit-transform: scale3d(2, 2, 2);
+	-webkit-animation-name: grow3;
+	-webkit-animation-duration: 4s;    
+	
+	
+	
+}
+.pipe.loop{
+	
+   	position:absolute;
+	top:0;
+	left:0;
+	
+	-webkit-transform: scale3d(2, 2, 2);
+	-webkit-animation-name: grow;
+	-webkit-animation-duration: 2s;    
+} 
+.small{
+	
+	
+	-moz-transform:scale(.2,.2);
+	-o-transform:scale(.2,.2);
+	-webkit-transform:scale(.2,.2);
+	transform:scale(.2,.2);
+}  
+
+@-webkit-keyframes grow {
+ 0% {
+	-webkit-transform: scale3d(0.1, 0.1, 1);
+	opacity:0; 
+ } 
+ 100% {
+	-webkit-transform: scale3d(2, 2, 2);
+	opacity: 1;
+ }
+} 
+
+@-webkit-keyframes grow2 {
+ 0% {
+	-webkit-transform: scale3d(0.1, 0.1, 1);
+
+opacity:0; 
+ }
+ 33.329% {
+	-webkit-transform: scale3d(0.1, 0.1, 1);
+
+opacity:0; 
+ }
+ 33.33% {
+	-webkit-transform: scale3d(0.1, 0.1, 1);
+
+opacity: 1;
+ }
+ 100% {
+	-webkit-transform: scale3d(2, 2, 1);
+
+opacity: 1;
+ }
+}
+@-webkit-keyframes grow3 {
+ 0% {
+	-webkit-transform: scale3d(0.1, 0.1, 1);
+ 	opacity:0; 
+ }
+ 49.95% {
+	-webkit-transform: scale3d(0.1, 0.1, 1);
+	opacity:0; 
+ }
+50% {
+	-webkit-transform: scale3d(0.1, 0.1, 1);
+	opacity: 1;
+ }
+ 100% {
+	-webkit-transform: scale3d(2, 2, 1);
+	opacity: 1;
+ }
+} 
